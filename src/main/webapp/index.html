@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChiliBana - Registrar Pedido</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>ChiliBana</h1>
+        <h2>Registrar pedido</h2>
+
+        <form action="registrarPedido" method="post">
+
+            <label>Nombre del cliente:</label><br>
+            <input type="text" name="cliente" required>
+            <br><br>
+
+            <label>Tipo de pedido:</label><br>
+            <select name="tipoPedido">
+                <option value="Domicilio">Domicilio</option>
+                <option value="En sitio">En sitio</option>
+            </select>
+            <br><br>
+
+            <label>Producto:</label><br>
+            <select name="producto">
+                <option value="Gomitas enchiladas">Gomitas enchiladas</option>
+                <option value="Granizado enchilado">Granizado enchilado</option>
+                <option value="Chamoy">Chamoy</option>
+            </select>
+            <br><br>
+
+            <label>Cantidad:</label><br>
+            <input type="number" name="cantidad" min="1" required>
+            <br><br>
+
+            <button type="submit">Registrar pedido</button>
+
+        </form>
+    </body>
+</html>
